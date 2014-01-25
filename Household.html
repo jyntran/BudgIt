@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Household Items</title>
+ <link rel="stylesheet" href="foundation/css/foundation.css" />
+    <script src="foundation/js/vendor/modernizr.js"></script>
+<style>
+div.panel{
+	background-color:#8EBFE2;
+}
+/*
+body{
+	text-align: center;
+	background:black;
+	font-family: Cambria;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+p{
+	font-size:16px;
+	color:#721012;
+}
+input{
+	border:0;
+	padding:12px;
+	font-size:18px;
+}*/
+input[type="submit"]{
+	background:#75778C;
+	color: Black;
+}
+body{
+	background-color:black;
+	color:#BE2022;
+}
+</style>
+   
+</head>
+
+<body>
+
+<div class="row">
+<div class="large-8 columns">
+<div class="panel">
+<h2><font color=red></font>Add items</h2>
+<p>Welcome Housemate! Enter your recent purchase details.</p>
+<form action ="enteritem.php" method="post">
+<div class="row">
+<div class="large-4 columns">
+<input type="text"
+	placeholder="Household Name"
+    name="HouseholdName">
+</div>
+<div class="large-4 columns">
+<input type="text"
+		placeholder="Number of Housemates"
+    name="NumberOfPeople">
+</div>
+<div class="large-4 columns">
+<input type="text"
+	placeholder="Your name"
+    name="NameOfBuyer">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<input type="text"
+	placeholder="Item name"
+    name="NameOfItem">
+</div>
+</div>
+<div class="row">
+<div class="large-4 columns">
+<input type="number"
+	placeholder="Item Price ($)"
+    name="ItemPrice">
+</div>
+<div class="large-4 columns">
+<input type="number"
+	placeholder="Number of items"
+    name="QuantityOfItem">
+</div>
+<div class="large-4 columns">
+<input type="date"
+	placeholder="Date purchased"
+    name="Date">
+</div>
+</div>
+<input type="submit">
+</div>
+</form>
+</div>
+</div>
+</div>
+
+    <script src="foundation/js/vendor/jquery.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>

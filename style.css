@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	text-align: center;
+	background:black;
+	font-family: Cambria;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+p{
+	font-size:16px;
+	color:#721012;
+}
+input{
+	border:0;
+	padding:12px;
+	font-size:18px;
+}
+input[type="submit"]{
+	background:neonpink;
+	color:black;
+}

@@ -1,0 +1,39 @@
+<?php
+session_start();
+$myusername = $_SESSION['myusername'];
+//{
+//header("location:main_login.php");
+//}
+?>
+
+<html>
+<head>
+	<link rel="stylesheet" href="foundation/css/foundation.css" />
+	<script src="foundation/js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+<div class="row">
+<h2>Delete my household</h2>
+</div>
+
+<div class="row">
+	<div class="large-6 columns">
+	<div class="panel">
+		<form action="deletehouse.php" method="post">
+		<label>House to delete:</label> <input type="text" name="householdname" placeholder="Enter house name"><br/>
+		Warning: after submitting, all house data will be erased!
+		<br/><br/><input type="submit">
+		</form>
+	</div>
+	</div>
+</div>
+
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+</body>
+</html>

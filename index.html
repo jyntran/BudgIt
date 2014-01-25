@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="foundation/css/foundation.css"/>
+<script src ="foundation/js/vendor/modernizr.js"></script>
+<style>
+ body{
+	 background-image:url(bokeh.jpg);
+	 background-repeat:no-repeat;
+	 background-position: center center;
+	 background-size:cover;
+ }
+ h1{
+	 color:white;
+	 text-shadow: 1px 1px 3px grey; 
+ }
+ input[type="submit"]{
+	 background-color:#75778C;
+	 color:black;
+ }
+ div.panel{
+	 background-color:#8EBFE2;
+ }
+	 
+</style>
+</head>
+<body>
+<div class="row">
+	<div class="small-12 columns">
+    	<h1>Welcome to BudgIt</h1>
+    </div>
+</div>
+<div class="row">
+	<div class="large-8 medium-5 columns">
+    	<div class="panel">
+        	<h3>Are you stoked to try BudgIt?</h3>
+            <p>After all, who's not stoked to start saving?</p>
+  			<div class="row">
+             	<div class="large-8 medium-8 columns">     
+					<form action="signedup2.php" method="post">
+					House Name/Username: <input type="text" name="householdname">
+					House ID (must be a number): <input type="text" name="householdid">
+	<!--				Password: <input type="password" name="password"> -->
+					Number of Occupants: <input type="text" name="numberofpeople">
+					<input type="submit">
+					</form>
+				</div>
+            </div>
+         </div>
+       </div>
+	   <div class="large-4 medium-7 columns">
+	   <div class="panel">
+	    <h4>About BudgIt</h4>
+  <p>BudgI	t is a management app that not only organizes your household's inventory, but it also keeps track of the costs so that everyone pays their share of the utilities. Improve your relationship with your housemates and watch your savings grow at the same time.</p>
+	   </div>
+	   </div>
+  </div>          
+  
+<script src = "foundation/js/vendor/jquery.js"></script>
+<script src = "foundation/js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
