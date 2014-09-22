@@ -3,4 +3,4 @@ budgit
 
 BudgIt - Waterloo Facebook Hackathon project
 
-With E. Chan, J. Patricia, O. Mikande, S. Marcok
+With E. Chan, J. Patricia, S. Makinde, S. Marcok
